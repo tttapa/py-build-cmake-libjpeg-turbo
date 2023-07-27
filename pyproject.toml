@@ -20,3 +20,7 @@ build_type = "RelWithDebInfo"
 build_args = ["-j"]
 install_components = ["shlib"]
 abi = 'none'
+
+[tool.cibuildwheel]
+build-verbosity = 1
+environment = { PY_BUILD_CMAKE_VERBOSE="1" }
